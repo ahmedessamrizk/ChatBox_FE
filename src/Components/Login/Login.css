@@ -62,6 +62,15 @@
     border-radius: 50%;
   }
 
+  .login .text-danger{
+    max-width: 20rem;
+  }
+  .login .input-field{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   @media only screen and (max-width: 991px) {
 	.layer{
         top: -10%;

@@ -66,7 +66,10 @@ export default function Groups() {
   };
 
   const clearInput = () => {
-    document.getElementById("groupPassword").value = "";
+    if(document.getElementById("groupPassword")){
+
+      document.getElementById("groupPassword").value = "";
+    }
   };
   const joinGroup = async () => {
     let password = "";

@@ -12,7 +12,7 @@ import { BrowserRouter } from 'react-router-dom';
 import $ from 'jquery'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-export const baseURL = 'http://localhost:3001/api/v1';
+export const baseURL = 'https://chat-box-be.vercel.app/api/v1';
 export const BEARERKEY = "chatBox234512__"
 
 
@@ -21,7 +21,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <App />
-      
+
     </BrowserRouter>
   </React.StrictMode>
 );

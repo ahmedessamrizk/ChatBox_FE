@@ -106,10 +106,10 @@ export default function Dashboard() {
                 backgroundPadding={6}
                 value={analytics?.messagesSent}
                 background={true}
-                maxValue={Math.ceil( ((analytics?.messagesSent + analytics?.messagesReceived)))? Math.ceil( ((analytics?.messagesSent + analytics?.messagesReceived))) : 0}
+                maxValue={Math.ceil( ((analytics?.messagesSent + analytics?.messagesReceived)))? Math.ceil( ((analytics?.messagesSent + analytics?.messagesReceived))) : 1}
                 text={
                   isNaN(Math.floor(analytics?.messagesSent / (analytics?.messagesSent + analytics?.messagesReceived) * 100))?
-                  0
+                  "0%"
                   :
                   `${Math.floor(analytics?.messagesSent / (analytics?.messagesSent + analytics?.messagesReceived) * 100)}%`
                 }
@@ -136,7 +136,7 @@ export default function Dashboard() {
                 maxValue={(analytics?.messagesSent + analytics?.messagesReceived)? (analytics?.messagesSent + analytics?.messagesReceived) : 1}
                 text={
                   isNaN(Math.floor(analytics?.messagesReceived / (analytics?.messagesSent + analytics?.messagesReceived) * 100))?
-                  "0"
+                  "0%"
                   :
                   `${Math.floor(analytics?.messagesReceived / (analytics?.messagesSent + analytics?.messagesReceived) * 100)}%`
                 }
