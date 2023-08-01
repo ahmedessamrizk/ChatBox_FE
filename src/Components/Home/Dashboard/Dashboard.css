@@ -1,0 +1,55 @@
+
+.analytics .circular-progress{
+    /* background-color: var(--chart); */
+    left: 50%;
+    top: -30%;
+    transform: translateX(-50%);
+    /* box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22); */
+}
+.circular-container{
+    height: 50px;
+}
+
+/* Online people */
+.online-people i{
+	font-size: 10px !important;
+    left: 76%;
+    top: 72%;
+}
+.items {
+	position: relative;
+
+	overflow: hidden;
+	white-space: nowrap;
+	font-size: 0;
+	cursor: pointer;
+  }
+  .items.activeOnline {
+	background-color: transparent;
+	cursor: grab;
+  }
+  
+  .item {
+	display: inline-block;
+	margin-left: 20px;
+	user-select: none;
+	/* color: #222; */
+  }
+  .item:last-child {
+	margin-right: 20px;
+  }
+  .fs-7{
+    font-size: 14px;
+  }
+  .bg-offline{
+    background-color:rgba(173, 173, 180, 0.6);
+  }
+/* End of online people */
+
+.control-panel-section, .users, .recent-chats{
+  background-color: var(--secondary-background);
+}
+
+.analytic-card{
+  background-color: var(--chart-background);
+}

@@ -1,0 +1,52 @@
+:root {
+    --profile-card-body: #888aa0;
+    --profile-pic-border: #484b6a;
+}
+
+.profile-avatar {
+    border: 2px solid var(--logo-bgc);
+    border-radius: 50%;
+}
+
+.profile .card{
+    border: none !important;
+    
+}
+.profile .card-body{
+    /* max-height: 20rem !important; */
+    /* overflow: auto; */
+}
+
+/* Media Query */
+@media only screen and (max-width: 990px) {
+    .profile{
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 770px) {
+    .profile{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .profile .card-body{
+        /* max-height: 15rem !important; */
+        overflow: auto;
+    }
+}
+
+
+.profile-img{
+    background-color: var(--profile-img);
+    /* border-radius: 30px 30px 0px 0px; */
+}
+.profile, .contact-information{
+    border: 2px solid var(--profile-pic-border);
+    background-color: var(--contact-bgc);
+}
+
+.contact-information .header{
+    background-color: var(--contact-header);
+    /* color: var(--side-nav-color); */
+
+}

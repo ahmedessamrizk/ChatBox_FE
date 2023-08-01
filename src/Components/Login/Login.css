@@ -1,0 +1,70 @@
+.login input {
+    font-size: var(--font-size);
+    border-radius: 0.4rem;
+    border: 2px solid black;
+    color: inherit
+  }
+  .login .content{
+    border-radius: 10px;
+    background-color: var(--login-bgc);
+  }
+  .input-field  label {
+    top: 17%;
+    left: 4%;
+    transform-origin: left center;
+    pointer-events: none;
+    transition: transform 0.2s ease-out;
+    color: rgba(240, 240, 240, 0.4);
+  }
+  
+  .input-field  :is(input:focus, input:valid) {
+    outline: none;
+    border-color: black;
+  }
+  
+ .input-field  :is(input:focus, input:valid) + label {
+    transition: 0.2s ease-out;
+    font-size: 18px;
+    color: var(--carousel) !important;
+    transform: translateY(-2.2rem) scale(0.9);
+  }
+  .valid-input{
+    border: 3px solid green !important;
+ }
+ .invalid-input{
+    border: 3px solid red !important;
+ }
+ .fa-check{
+  color: green;
+ }
+ .fa-xmark{
+  color: red;
+ }
+ .check-mark{
+    right: 40px;
+    top: 0px;
+ }
+
+  .logo-img{
+      width: 50px;
+      height: 50px;
+      /* background-color: red; */
+      
+    }
+    .layer{
+        position: absolute;
+        top: -5%;
+        left: 50%;
+        transform: translateX(-50%);
+    background-color: var(--carousel);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+  }
+
+  @media only screen and (max-width: 991px) {
+	.layer{
+        top: -10%;
+        left: 50%;
+  }
+}

@@ -1,0 +1,95 @@
+:root {
+    --messages-section: #fafafa;
+    --logo-bgc: #484b6a;
+    --side-nav:#9394a5;
+    --chat-border: #9394a5;
+}
+
+/* Online people */
+.online-people i{
+	font-size: 10px !important;
+    left: 76%;
+    top: 72%;
+}
+.items {
+	position: relative;
+
+	overflow: hidden;
+	white-space: nowrap;
+	font-size: 0;
+	cursor: pointer;
+  }
+  .items.activeOnline {
+	background-color: transparent;
+	cursor: grab;
+  }
+  
+  .item {
+	display: inline-block;
+	margin-left: 20px;
+	user-select: none;
+	color: #222;
+  }
+  .item:last-child {
+	margin-right: 20px;
+  }
+  .fs-7{
+    font-size: 14px;
+  }
+/* End of online people */
+
+.groups .messages{
+    /* max-height: 25rem; */
+    max-height: 30rem;
+    overflow: auto;
+}
+
+ .chat-body{
+    /* min-height: 20rem !important;
+    max-height: 22.25rem; */
+    height: 33.55rem !important;
+   
+}
+
+
+/* .groups .chat-body .message{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: var(--logo-text);
+} */
+
+
+
+/* carousel background */
+.all-groups{
+  background-color: #d2d3db !important;
+}
+
+/* Chat */
+.chat-header{
+  background-color: var(--chat-header);
+  border: 1px 0px solid ;
+  border-bottom: 1px solid;
+}
+.chat-body .message{
+  background-color: var(--message-bgc);
+}
+.chat-body .owner{
+background-color: var(--carousel);
+}
+.message p{
+  color: var(--chat-text);
+}
+.message .h6{
+  color: var(--chat-person);
+}
+.chat-body{
+  background-color: var(--chat-body);
+  border-bottom: 1px solid;
+}
+.chat{
+  border: 1px solid ;
+}
+@media (max-width: 991.98px){
+  
+}

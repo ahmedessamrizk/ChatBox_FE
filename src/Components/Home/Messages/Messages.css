@@ -1,0 +1,151 @@
+/* Search bar */
+
+/* Online people */
+.online-people i{
+	font-size: 10px !important;
+    left: 76%;
+    top: 72%;
+}
+.items {
+	position: relative;
+
+	overflow: hidden;
+	white-space: nowrap;
+	font-size: 0;
+	cursor: pointer;
+  }
+  .items.activeOnline {
+	background-color: transparent;
+	cursor: grab;
+  }
+  
+  .item {
+	display: inline-block;
+	margin-left: 20px;
+	user-select: none;
+	color: #222;
+	font-size: 33px;
+	font-weight: bold;
+	line-height: 130px;
+  }
+  .item:last-child {
+	margin-right: 20px;
+  }
+  
+/* End of online people */
+
+.messages-section{
+    background-color: var(--messages-section);
+}
+.chat-body .message{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: var(--message-bgc);
+}
+.chat-body .owner{
+	background-color: var(--carousel);
+}
+
+.accordion-body{
+    max-height: 20rem;
+    overflow: auto;
+}
+.search-container {
+	position: relative;
+	display: inline-block;
+	margin: 4px 2px;
+	height: 50px;
+	width: 50px;
+	vertical-align: bottom;
+}
+
+.searchbutton {
+	position: absolute;
+	font-size: 22px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.search:focus + .searchbutton {
+	transition-duration: 0.4s;
+	-moz-transition-duration: 0.4s;
+	-webkit-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
+	background-color: white;
+	color: black;
+}
+
+.search {
+	position: absolute;
+	left: 49px; /* Button width-1px (Not 50px/100% because that will sometimes show a 1px line between the search box and button) */
+	background-color: white;
+	outline: none;
+	border: none;
+	padding: 0;
+	width: 0;
+	height: 100%;
+	z-index: 10;
+	transition-duration: 0.4s;
+	-moz-transition-duration: 0.4s;
+	-webkit-transition-duration: 0.4s;
+	-o-transition-duration: 0.4s;
+}
+
+.search:focus {
+	width: 15rem; /* Bar width+1px */
+	padding: 0 16px 0 0;
+}
+
+.expandright {
+	left: auto;
+	right: 49px; /* Button width-1px */
+}
+
+.expandright:focus {
+	padding: 0 0 0 16px;
+}
+
+.last-message{
+	max-width: 20rem;
+}
+@media only screen and (max-width: 765px) {
+	.last-message{
+		max-width: 30rem ;
+	}
+}
+@media only screen and (max-width: 580px) {
+	.last-message{
+		max-width: 19rem ;
+	}
+}
+@media only screen and (max-width: 380px) {
+	.last-message{
+		max-width: 13rem ;
+	}
+}
+.chat .last-message{
+	max-width: fit-content;
+}
+
+/* Chat */
+.chat-body{
+    background-color: var(--chat-body);
+    overflow-y: auto;
+}
+.chat-header, .send-message-section{
+    background-color: var(--chat-header);
+}
+.send-message-btn{
+    background-color: var(--chat-body) !important;
+	color: var(--chat-header) !important;
+    width: 40px;
+    height: 40px;
+}
+.send-message-btn i{
+    color: var(--logo-text);
+}
+.pinned-messages .accordion-body{
+	max-height: 10rem;
+}
+

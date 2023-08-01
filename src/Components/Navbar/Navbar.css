@@ -1,0 +1,16 @@
+@media (max-width: 991.98px){
+    .navbar{
+        position: fixed !important;
+        width: 100%;
+        z-index: 999;
+    }
+    .analytics{
+        padding-top: 30px;
+    }
+    .analytic-card{
+        margin: 10px;
+    }
+    .analytic-card h5{
+        margin-top: 12px !important;
+    }
+}
