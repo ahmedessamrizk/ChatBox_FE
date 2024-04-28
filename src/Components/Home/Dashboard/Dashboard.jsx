@@ -88,7 +88,7 @@ export default function Dashboard() {
   return (
     <div className="col">
       {
-        // analytics?
+        analytics?
       <div className="row min-vh-100 mt-md-0 mt-5 pt-lg-0 pt-5 mx-lg-2 justify-content-center">
       <div className="row analytics mt-lg-5 mt-0 mb-3 gx-lg-4 gx-2 gy-lg-4 gy-md-5">
         <div className="col-md-3 col-sm-6 py-sm-0 py-1 mb-md-0 mb-5">
@@ -313,23 +313,23 @@ export default function Dashboard() {
 
       </div>
       </div>
-//         :
-// <div className=" w-100 h-100 d-flex justify-content-center align-items-center">
-//             <div class="sk-circle">
-//               <div class="sk-circle1 sk-child"></div>
-//               <div class="sk-circle2 sk-child"></div>
-//               <div class="sk-circle3 sk-child"></div>
-//               <div class="sk-circle4 sk-child"></div>
-//               <div class="sk-circle5 sk-child"></div>
-//               <div class="sk-circle6 sk-child"></div>
-//               <div class="sk-circle7 sk-child"></div>
-//               <div class="sk-circle8 sk-child"></div>
-//               <div class="sk-circle9 sk-child"></div>
-//               <div class="sk-circle10 sk-child"></div>
-//               <div class="sk-circle11 sk-child"></div>
-//               <div class="sk-circle12 sk-child"></div>
-//             </div>
-//           </div>
+        :
+<div className=" w-100 h-100 d-flex justify-content-center align-items-center">
+            <div class="sk-circle">
+              <div class="sk-circle1 sk-child"></div>
+              <div class="sk-circle2 sk-child"></div>
+              <div class="sk-circle3 sk-child"></div>
+              <div class="sk-circle4 sk-child"></div>
+              <div class="sk-circle5 sk-child"></div>
+              <div class="sk-circle6 sk-child"></div>
+              <div class="sk-circle7 sk-child"></div>
+              <div class="sk-circle8 sk-child"></div>
+              <div class="sk-circle9 sk-child"></div>
+              <div class="sk-circle10 sk-child"></div>
+              <div class="sk-circle11 sk-child"></div>
+              <div class="sk-circle12 sk-child"></div>
+            </div>
+          </div>
       }
     </div>
   );

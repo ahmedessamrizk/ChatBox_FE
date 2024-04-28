@@ -71,24 +71,7 @@ function App() {
     const decoded = jwtDecode(localStorage.getItem("token"));
 
     setUser(decoded.user)
-    // const config = {
-    //   headers: {
-    //     authorization: BEARERKEY + localStorage.getItem("token"),
-    //   }
-    // };
-    // let result = await axios.get(`${baseURL}/user/profile`, config).catch(function (error) {
-    //   if (error.response) {
-    //     console.log(error.response);
-    //   }
-    // });
-
-    // if (result?.data?.message == "done") {
-    //   setUser(result.data.user);
-    //   navigate("/home")
-    // } else {
-    //   localStorage.removeItem("token");
-    //   setUser(null);
-    // }
+   
   }
   async function removeUser() {
     const config = {

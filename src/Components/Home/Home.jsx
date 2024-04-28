@@ -384,6 +384,7 @@ export default function Home({ user, removeUser, handleClick, setAlert }) {
             </div>
           </div>
           {/* End of Modal */}
+          
           <Outlet context={[users, user, config, setAlert, handleClick]} />
         </div>
       </div>
